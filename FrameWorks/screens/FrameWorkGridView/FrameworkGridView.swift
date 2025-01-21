@@ -21,7 +21,7 @@ struct FrameworkGridView : View {
             ScrollView{
                 LazyVGrid(columns: columns){
                     ForEach(MockData.frameworks){ framework in
-                        FrameWorkTitleView(framework: framework).onTapGesture {
+                        FrameWorkTitleView(isGridView: true, framework: framework).onTapGesture {
                             viewModel.selectecFramework = framework
                         }
                     }
@@ -38,6 +38,8 @@ struct FrameworkGridView : View {
 }
 
 
-
+#Preview {
+    FrameworkGridView()
+}
 
 

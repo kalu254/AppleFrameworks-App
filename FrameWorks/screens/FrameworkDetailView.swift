@@ -10,12 +10,11 @@ import SwiftUI
 struct FrameworkDetailView: View {
     let framework: Framework
     @Binding var isShowingDetailView: Bool
-    @State var isShowingSafariView: Bool = false
+    @State private var isShowingSafariView: Bool = false
     var body: some View {
         VStack {
-            XDismissButton(isShowing: $isShowingDetailView)
             Spacer()
-            FrameWorkTitleView(framework: framework)
+            FrameWorkTitleView(isGridView: true, framework: framework)
             Text(framework.description).font(.body)
                 .padding()
             Spacer()
