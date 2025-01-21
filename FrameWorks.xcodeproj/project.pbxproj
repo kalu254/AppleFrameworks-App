@@ -30,11 +30,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FFEE2CCE2D3E849E00A79FB8 /* FrameWorks */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FrameWorks;
-			sourceTree = "<group>";
-		};
 		FFEE2CDF2D3E84A000A79FB8 /* FrameWorksTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FrameWorksTests;
@@ -43,6 +38,11 @@
 		FFEE2CE92D3E84A000A79FB8 /* FrameWorksUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FrameWorksUITests;
+			sourceTree = "<group>";
+		};
+		FFEE2E3C2D3FA0BA00A79FB8 /* FrameWorks */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FrameWorks;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +75,10 @@
 		FFEE2CC32D3E849E00A79FB8 = {
 			isa = PBXGroup;
 			children = (
-				FFEE2CCE2D3E849E00A79FB8 /* FrameWorks */,
 				FFEE2CDF2D3E84A000A79FB8 /* FrameWorksTests */,
 				FFEE2CE92D3E84A000A79FB8 /* FrameWorksUITests */,
 				FFEE2CCD2D3E849E00A79FB8 /* Products */,
+				FFEE2E3C2D3FA0BA00A79FB8 /* FrameWorks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FFEE2CCE2D3E849E00A79FB8 /* FrameWorks */,
+				FFEE2E3C2D3FA0BA00A79FB8 /* FrameWorks */,
 			);
 			name = FrameWorks;
 			packageProductDependencies = (
