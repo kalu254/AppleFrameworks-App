@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     let framework: Framework
-    @Binding var isShowingDetailView: Bool
     @State private var isShowingSafariView: Bool = false
     var body: some View {
         VStack {

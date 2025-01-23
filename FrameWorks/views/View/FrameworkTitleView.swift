@@ -19,6 +19,7 @@ struct FrameWorkTitleView : View {
                 Text(framework.name).font(.title)
                     .fontWeight(.semibold)
                     .scaledToFit()
+                    .foregroundColor(Color(.label))
                     .minimumScaleFactor(0.5)
             }.padding() } else  { HStack
                 {
@@ -28,6 +29,7 @@ struct FrameWorkTitleView : View {
                     Text(framework.name).font(.title)
                         .fontWeight(.semibold)
                         .scaledToFit()
+                        .foregroundColor(Color(.label))
                         .minimumScaleFactor(0.5)
                         .padding()
                 }
@@ -37,6 +39,6 @@ struct FrameWorkTitleView : View {
 }
 
 
-#Preview {
-    FrameWorkTitleView(isGridView:false,framework:MockData.sampleFramework)
-}
+//#Preview {
+//    FrameWorkTitleView(isGridView:false,framework:MockData.sampleFramework)
+//}

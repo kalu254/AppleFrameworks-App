@@ -14,11 +14,11 @@ struct FrameworkListView: View {
         NavigationView {
             List{
                 ForEach(MockData.frameworks){ framework in
-                    NavigationLink(destination:  FrameworkDetailView(framework: framework, isShowingDetailView: $viewModel.isShowingDetailView))
+                    NavigationLink(destination:  FrameworkDetailView(framework: framework ))
                     {
                         
-                        FrameWorkTitleView(isGridView: false, framework: framework).onTapGesture {
-                            viewModel.selectecFramework = framework
+                        FrameWorkTitleView(isGridView: false, framework: framework)
+                
                         }
                     }
                 }
@@ -27,9 +27,8 @@ struct FrameworkListView: View {
             
             
             
-        }.accentColor(Color(.label))
-        
     }
+        
 }
 
 #Preview {
